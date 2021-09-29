@@ -1,8 +1,10 @@
-import { combineReducers, createStore } from 'redux';
-import todos from './todo/reducer';
+import { combineReducers, createStore, compose } from 'redux';
+import shop from './commerce/reducer';
 
-const rootReducer = combineReducers({ todos });
+const rootReducer = combineReducers({ shop });
 
-const store = createStore(rootReducer);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const mdl = composeEnhancers();
+const store = createStore(rootReducer, mdl);
 
 export { store };

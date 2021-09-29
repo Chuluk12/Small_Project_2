@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 98vh;
+}
+
+.container {
+    width: 59vw;
+    background: rgba(231, 240, 242, 0.3);
+}
+.header {
+   margin-top: 70px;
+   margin-left: 17%;
+}
+.header h1 {
+    font-size: 70px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    margin-bottom: -12px;
+}
+.header span {
+    font-weight: bold;
+}
+.dropdown {
+    width: 40%;
+    background: #FFFFFF;
+}
+.select {
+    float: right;
+    margin-top: 70px;
+    margin-right: 25%;
+    border-right: 1px solid #E7F0F2;
+    padding-right: 10px ;
+}
+.dropdown p {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 12px;
+}
+.shopnow {
+    border: 0.5px solid #00000000;
+    box-sizing: border-box;
+    margin-top: 75px;
+}
+.shopnow button {
+    background: black;
+    color: #E7F0F2;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}  
+.concept {
+    position: absolute;
+    right: 145px;
+    top: 37%;
+}
+.concept h2 {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 34px;
+    text-align: right;
+    color: #000000;
+}
+.concept span {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 34px;
+    text-align: right;
+    color: #000000;
+}
+.text {
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+    width: 14%;
+    border-top: 1px solid #E7F0F2;
+}
+.text p {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.55);
+}
+.content {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.content-1 {
+    position: absolute;
+    width: 215px;
+    height: 114px;
+    left: 330px;
+    top: 473px;
+    background: #000000;
+}
+.content-1 h3 {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px; 
+    color: #FFFFFF;
+    font-weight: 900;
+}
+.content-1 h4 {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 7px;
+    color: #FFFFFF;
+}
+.content-2 {
+    position: absolute;
+    width: 215px;
+    height: 114px;
+    left: 660px;
+    top: 473px;
+    background: #000000;
+}
+.content-2 h3 {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px; 
+    color: #FFFFFF;
+    font-weight: 900;
+}
+.content-2 h4 {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 7px;
+    color: #FFFFFF;
+}
+.content-3 {
+    position: absolute;
+    width: 215px;
+    height: 114px;
+    left: 990px;
+    top: 473px;
+    background: #000000;
+}
+.content-3 h3 {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px; 
+    color: #FFFFFF;
+    font-weight: 900;
+}
+.content-3 h4 {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 7px;
+    color: #FFFFFF;
+} 
+.footer {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid #C4C4C4;
+} 
+
+
+
+
+
+
+
+// page 2
+
+.wrapper2 {
+  margin: 50px;
+} 
+.header3 {
+   margin-left: 30px;
+   float: left;
+}
+.header3 h1 {
+   font-family: 'Ubuntu',sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 36px;
+   color: #000000;
+}
+.cart {
+   float: right;
+   margin-right: 70px;
+   margin-top: 10px;
+}
+
+.cart .cartfill {
+   margin-bottom: 30px;
+   font-size: 20px;
+   cursor: pointer;
+}
+.input {
+  float: right;
+  margin-right: 20%;
+  border-bottom: 0.5px solid #C4C4C4;
+  height: 40px;
+}
+
+input[type="text"] {
+   border: none;
+   outline: none;
+   font-family: 'Roboto',sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 12px;
+   line-height: 14px;
+   text-align: right;
+   width: 125px;
+}
+.input .search {
+   margin-left: 40px;
+   margin-bottom: 12px;
+   color: #000000;
+   cursor: pointer;
+   margin-bottom: 1px;
+} 
+.container-3{
+   width: 100%;
+   height: 65vh; 
+   display: flex;
+   justify-content: center;
+   padding-top: 40px;
+}
+.container-left {
+   width: 20%;
+   height: 46%;
+   background-color: white;
+   margin-left: 3%;
+   margin-top: 12%;
+   border-left: 0.5px solid #E7F0F2;
+}
+.container-left span {
+   font-family: 'Ubuntu',sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 12px;
+   line-height: 30px;
+   color: #000000;
+   margin-left: 15px;
+}
+
+.container-left p {
+   font-family: 'Ubuntu',sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 40px;
+   color: #000000;
+   margin-left: 15px;
+}
+.container-center {
+   width: 60%;
+   height: 75%;
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-left: 10%;   
+   cursor: pointer;
+} 
+.container-right {
+   width: 10%;
+   height: 46%;
+   background-color: white;
+   margin-left: 20%;
+   border-right: 0.5px solid #E7F0F2;
+}
+.container-right span {
+   font-family: 'Ubuntu',sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 12px;
+   line-height: 40px;
+   color: #000000;
+   margin-left: 25px;
+}
+.container-right p {
+   font-family: 'Ubuntu',sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 40px;
+   color: #000000;
+   margin-left: 25px;
+}
+
+.kotak {
+   width: 173px;
+   height: 116px;
+   border: 1px solid transparent;
+   margin-top: 20px;
+   background: #FFFFFF;
+}
+.kotak button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 240, 242, 0.3);
+  cursor: pointer;
+}
+
+.kotak h1 {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 40%;
+    margin-right: 70px;
+}
+
+.kotak p {
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 70px;
+}
+.number {
+   border-top: 0.5px solid #E7F0F2;
+   width: 25%;
+   margin-left: 35%;
+   margin-top: 35px;
+}
+.number .nomor {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nomor span:first-child {
+   font-family: 'Roboto',sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 18px;
+   letter-spacing: 1em;
+   color: #000000;
+}
+.nomor span {
+   font-family: 'Roboto',sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   letter-spacing: 1em;
+   color: #E7F0F2;
+}
+.footer {
+   width: 100%;
+   height: 40px;
+   background: #FFFFFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 0.5px solid #C4C4C4;
+} 
+
+.tes {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page 3 */
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+.color {
+  width: 40%;
+  background: rgba(231, 240, 242, 0.3);
+}
+.image {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.box {
+  width: 60%;
+  background: white;
+}
+.awesome {
+  margin-top: 50px;
+  margin-right: 60px;
+  float: right;
+}
+.awesome .cart {
+  font-size: 20px;
+}
+.awesome .logo {
+
+  height: 20px;
+  width: 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  color: white;
+  background: rgb(250, 55, 55);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+  top: 50px;
+
+}
+.awesome h1 {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: right;
+  line-height: 14px;
+  font-family: 'Roboto', sans-serif;
+  border-right: 1px solid #C8DDE3;
+  padding-right: 10px;
+}
+.text1 {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.goback {
+  margin-top: 45px;
+  margin-right: 45px
+}
+.name h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 34px;
+  color: #363A41;
+}
+.name span {
+  font-family:  'Roboto',sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 34px;
+  color: #363A41;
+}
+.harga {
+  margin-top: 5%;
+}
+.harga p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #363A41;
+}
+.harga span {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #C8DDE3 ;
+  font-family: 'Roboto',sans-serif;
+}
+.paragraph {
+  width: 50%;
+  margin-top: 5%;
+}
+.paragraph p {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.size {
+  margin-top: 5%;
+  width: 130px;
+}
+.size p {
+  float: left;
+  font-family: 'Ubuntu',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 2px;
+}
+.size select {
+  float: right;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: -5px;
+  border: none;
+  outline: none;
+}
+.mens {
+  float: right;
+  margin-top: 5%;
+  margin-right: 60px;
+}
+.mens p {
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.55);
+}
+.add {
+  border: 0.5px solid #00000000;
+  box-sizing: border-box;
+  margin-top: 125px;
+}
+.add button {
+  background: #000000;
+  color: #E7F0F2;
+  font-size: 12px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px;
+  width: 115px;
+  cursor: pointer;
+} 
+
+.add button:hover {
+  color: #000000;
+  background: rgb(250, 55, 55);;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid #C4C4C4;
+} 
+
+.prev {
+  cursor: pointer;
+  margin-right: 8px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: #000000;
+}
+.next {
+  left: 55px;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: #000000;
+}
+.sliding {
+  position: relative;
+  left: 15%;
+  bottom: 37px;
+}
